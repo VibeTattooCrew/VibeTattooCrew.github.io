@@ -1,0 +1,395 @@
+/*style header*/
+.navbar{
+    background-color: #E9D403;
+}
+ 
+#logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.nav-link{
+    font-size: 1.1em;
+    font-family: 'Roboto';
+    color: #000000;
+}
+
+.nav-link:hover{
+    color: #ffffff;
+    background: #ffcc00ec;
+}
+
+/*style main - sobre*/
+#sobre{
+    margin-top: 100px;
+}
+
+.quemSomos {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    flex-direction: column;   
+}
+
+.studio{
+    width: 80%;
+}
+
+.quemSomos-image{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quemSomos-text{
+    font-size: 1em;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: justify;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.contato{
+    margin-top: 30px;
+}
+.contato-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+}
+
+.contato-info span{
+    display: inline-block;
+    padding: 10px;
+    color: #ffcc00;
+}
+
+.contato h2{
+    color: #ffcc00;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.contato-info p, .icon-contato{
+    color: #ffffff;
+}
+
+
+/*style main - galeria*/
+
+#accordion div{
+    background: transparent;
+}
+
+.images-tattoo img{
+    padding: 3px;
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+div .card-header{
+    text-align: center;
+    border: none;
+}
+
+div .card-header img{
+    border: 1px solid white;
+}
+
+
+
+/*style main - tatuadores*/
+
+#tatuadores{
+    margin-top: 30px;
+}
+
+.info h3{
+    color: #ffcc00;
+    margin-left: 12px;
+}
+.info p{
+    color: white;
+    margin-left: 12px;
+    text-align: justify;
+}
+
+.col-md-4 .info{
+    width: 90%;
+} 
+.col-md-6 .info{
+    width: 70%;
+}
+
+.tatuadores{
+    padding: 5px;
+}
+
+
+.col-md-6 .tatuadores{
+    margin-left: 100px;
+}
+
+
+/*Gerais*/
+
+h1{
+       color: #ffffff;
+       font-family: 'Roboto Slab';
+       font-size: 3em;
+       text-align: center;
+   }
+   
+   
+hr {
+    background-color: #ffcc00;
+}
+  
+
+.app{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: "header" "main" "footer";
+    height: 100vh;
+}
+
+body{
+    background: url("../img/visual/bg-vibe.jpeg"),
+    linear-gradient(50deg, #000000, #000000);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header.header{
+    grid-area: "header";
+}
+main.main{
+    grid-area: "main";
+    background-color: rgba(0, 0, 0, 0.7);
+}
+footer.footer{
+    grid-area: "footer";
+    background-color:  #E9D403;
+    margin-top: 0px;
+}
+
+/*style footer*/
+
+.icon{
+    font-size: 2em;
+    padding: 10px;
+    color: #000000;
+}
+
+span.icons, span.cop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cop{
+    font-size: 1.2em;
+    font-family: 'Roboto';
+    color: #000000; 
+}
+
+
+/*style arte*/
+
+.images-desenho img, .images-grafite img, .images-quadro img{
+    width: 270px;
+    height: 270px;
+    padding: 5px;
+}
+
+
+#conteudo{
+    margin-top: 130px;
+}
+#conteudo .container{
+    margin-top: 20px;
+}
+
+/*responsividade*/
+
+@media (max-width: 575.98px) { 
+   /* .quemSomos-text{
+        width: 90%;
+        font-size: 1em;
+        font-weight: normal;
+        text-align: justify;
+    }
+    */
+
+    .studio{
+        width: 100%;
+    }
+    .contato h2{
+        font-size: 1.5em;
+    }
+    
+    h1{
+        font-size: 2em;
+    }
+    .contato-info{
+        flex-direction: column;
+    }
+    
+    .img-card{
+        width: 60%;
+    }
+
+    .tatuadores img, .col-md-4 .info, .col-md-6 .info{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .col-md-6 .tatuadores{
+        margin-left: 0;
+    }
+    .images-desenho img, .images-grafite img, .images-quadro img, .images-tattoo img{
+        width: 45%;
+        height: 45%;
+        margin-left: 2.5%;
+        padding: 3px;
+    }
+    .icon{
+        font-size: 1.8em;
+        padding: 8px;
+    }
+    .cop{
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .studio{
+        width: 100%;
+    }
+    .contato h2{
+        font-size: 1.7em;
+    }
+    .contato-info{
+        flex-direction: column;
+     
+    }
+    
+    h1{
+        font-size: 2em;
+    }
+
+    .img-card{
+        width: 60%;
+    }
+
+    .tatuadores img, .col-md-4 .info, .col-md-6 .info{
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+    .col-md-6 .tatuadores{
+        margin-left: 0;
+    }
+    .images-desenho img, .images-grafite img, .images-quadro img, .images-tattoo img{
+        width: 45%;
+        height: 45%;
+        margin-left: 2.5%;
+        padding: 3px;
+    }
+    .icon{
+        font-size: 1.8em;
+        padding: 8px;
+    }
+
+    .images-quadro img{
+        width: 270px;
+        height: 270px;
+        width: 43%;
+    }
+
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .studio{
+        width: 100%;
+    }
+    .contato h2{
+        font-size: 1.5em;
+    }
+    
+    h1{
+        font-size: 2em;
+    }
+
+    .img-card{
+        width: 50%;
+    }
+    .tatuadores {
+        padding: 2px;
+    }
+
+    .col-md-4 .tatuadores img, .col-md-4 .info{
+        width: 100%;
+    }
+    .col-md-6 .tatuadores img, .col-md-6 .info{
+        width: 80%;
+    }
+   
+    .col-md-6 .tatuadores{
+        margin-left: 5%;
+    }
+    
+    .images-desenho img, .images-grafite img, .images-quadro img, .images-tattoo img{
+        width: 45%;
+        height: 45%;
+        margin-left: 2.5%;
+        padding: 3px;
+    }
+
+    .images-quadro img{
+        width: 270px;
+        height: 270px;
+        width: 43%;
+    }
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {  
+
+    .contato h2{
+        font-size: 2em;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    .images-tattoo img{
+        margin-left: 10%;
+    }
+    .col-md-4 .tatuadores img{
+        width: 100%;
+    }
+
+    .col-md-6 .tatuadores img, .col-md-6 .info{
+        margin-left: 10%;
+    }
+
+    .col-md-6 .tatuadores{
+        margin-left: 0; 
+    }
+    .images-desenho img, .images-grafite img, .images-quadro img{
+        margin-left: 2.5%;
+    } 
+
+}
