@@ -21,11 +21,11 @@
 }
 
 /*style main - sobre*/
-#sobre{
+#about{
     margin-top: 100px;
 }
 
-.quemSomos {
+.about {
     display: flex;
     align-items: center;
     justify-content: center;   
@@ -36,14 +36,14 @@
     width: 80%;
 }
 
-.quemSomos-image{
+.about-image{
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.quemSomos-text{
+.about-text{
     font-size: 1em;
     color: #ffffff;
     font-family: sans-serif;
@@ -52,10 +52,10 @@
     width: 90%;
 }
 
-.contato{
+.contact{
     margin-top: 30px;
 }
-.contato-info{
+.contact-info{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,20 +63,20 @@
     font-size: 1em;
 }
 
-.contato-info span{
+.contact-info span{
     display: inline-block;
     padding: 10px;
     color: #ffcc00;
 }
 
-.contato h2{
+.contact h2{
     color: #ffcc00;
     font-size: 2em;
     text-align: center;
     font-family: 'Roboto';
 }
 
-.contato-info p, .icon-contato{
+.contact-info p, .icon-contact{
     color: #ffffff;
 }
 
@@ -107,7 +107,7 @@ div .card-header img{
 
 /*style main - tatuadores*/
 
-#tatuadores{
+#tattoo-artists{
     margin-top: 30px;
 }
 
@@ -128,12 +128,12 @@ div .card-header img{
     width: 70%;
 }
 
-.tatuadores{
+.tattoo-artists{
     padding: 5px;
 }
 
 
-.col-md-6 .tatuadores{
+.col-md-6 .tattoo-artists{
     margin-left: 100px;
 }
 
@@ -208,42 +208,35 @@ span.icons, span.cop{
 
 /*style arte*/
 
-.images-desenho img, .images-grafite img, .images-quadro img{
+.images-drawing img, .images-graffiti img, .images-frame img{
     width: 270px;
     height: 270px;
     padding: 5px;
 }
 
 
-#conteudo{
+#content{
     margin-top: 130px;
 }
-#conteudo .container{
+#content .container{
     margin-top: 20px;
 }
 
 /*responsividade*/
 
 @media (max-width: 575.98px) { 
-   /* .quemSomos-text{
-        width: 90%;
-        font-size: 1em;
-        font-weight: normal;
-        text-align: justify;
-    }
-    */
-
+ 
     .studio{
         width: 100%;
     }
-    .contato h2{
+    .contact h2{
         font-size: 1.5em;
     }
     
     h1{
         font-size: 2em;
     }
-    .contato-info{
+    .contact-info{
         flex-direction: column;
     }
     
@@ -251,14 +244,14 @@ span.icons, span.cop{
         width: 60%;
     }
 
-    .tatuadores img, .col-md-4 .info, .col-md-6 .info{
+    .tattoo-artists img, .col-md-4 .info, .col-md-6 .info{
         width: 60%;
         margin-left: 20%;
     }
-    .col-md-6 .tatuadores{
+    .col-md-6 .tattoo-artists{
         margin-left: 0;
     }
-    .images-desenho img, .images-grafite img, .images-quadro img, .images-tattoo img{
+    .images-drawing img, .images-graffiti img, .images-frame img, .images-tattoo img{
         width: 45%;
         height: 45%;
         margin-left: 2.5%;
@@ -277,10 +270,10 @@ span.icons, span.cop{
     .studio{
         width: 100%;
     }
-    .contato h2{
+    .contact h2{
         font-size: 1.7em;
     }
-    .contato-info{
+    .contact-info{
         flex-direction: column;
      
     }
@@ -293,15 +286,15 @@ span.icons, span.cop{
         width: 60%;
     }
 
-    .tatuadores img, .col-md-4 .info, .col-md-6 .info{
+    .tattoo-artists img, .col-md-4 .info, .col-md-6 .info{
         width: 60%;
         margin-left: 20%;
     }
     
-    .col-md-6 .tatuadores{
+    .col-md-6 .tattoo-artists{
         margin-left: 0;
     }
-    .images-desenho img, .images-grafite img, .images-quadro img, .images-tattoo img{
+    .images-drawing img, .images-graffiti img, .images-frame img, .images-tattoo img{
         width: 45%;
         height: 45%;
         margin-left: 2.5%;
@@ -312,7 +305,7 @@ span.icons, span.cop{
         padding: 8px;
     }
 
-    .images-quadro img{
+    .images-frame img{
         width: 270px;
         height: 270px;
         width: 43%;
@@ -324,7 +317,7 @@ span.icons, span.cop{
     .studio{
         width: 100%;
     }
-    .contato h2{
+    .contact h2{
         font-size: 1.5em;
     }
     
@@ -335,29 +328,29 @@ span.icons, span.cop{
     .img-card{
         width: 50%;
     }
-    .tatuadores {
+    .tattoo-artists {
         padding: 2px;
     }
 
-    .col-md-4 .tatuadores img, .col-md-4 .info{
+    .col-md-4 .tattoo-artists img, .col-md-4 .info{
         width: 100%;
     }
-    .col-md-6 .tatuadores img, .col-md-6 .info{
+    .col-md-6 .tattoo-artists img, .col-md-6 .info{
         width: 80%;
     }
    
-    .col-md-6 .tatuadores{
+    .col-md-6 .tattoo-artists{
         margin-left: 5%;
     }
     
-    .images-desenho img, .images-grafite img, .images-quadro img, .images-tattoo img{
+    .images-drawing img, .images-graffiti img, .images-frame img, .images-tattoo img{
         width: 45%;
         height: 45%;
         margin-left: 2.5%;
         padding: 3px;
     }
 
-    .images-quadro img{
+    .images-frame img{
         width: 270px;
         height: 270px;
         width: 43%;
@@ -366,7 +359,7 @@ span.icons, span.cop{
 
 @media (min-width: 992px) and (max-width: 1199.98px) {  
 
-    .contato h2{
+    .contact h2{
         font-size: 2em;
     }
 
@@ -377,18 +370,18 @@ span.icons, span.cop{
     .images-tattoo img{
         margin-left: 10%;
     }
-    .col-md-4 .tatuadores img{
+    .col-md-4 .tattoo-artists img{
         width: 100%;
     }
 
-    .col-md-6 .tatuadores img, .col-md-6 .info{
+    .col-md-6 .tattoo-artists img, .col-md-6 .info{
         margin-left: 10%;
     }
 
-    .col-md-6 .tatuadores{
+    .col-md-6 .tattoo-artists{
         margin-left: 0; 
     }
-    .images-desenho img, .images-grafite img, .images-quadro img{
+    .images-drawing img, .images-graffiti img, .images-frame img{
         margin-left: 2.5%;
     } 
 
