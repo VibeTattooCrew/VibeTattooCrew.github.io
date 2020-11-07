@@ -15,27 +15,27 @@ $(function(){
     $('#grafite').on("click", function(e){
         e.preventDefault()
         $.get("grafites.html", function(data){
-            $('#conteudo').html(data)
+            $('#content').html(data)
         })    
     })
 
     $('#quadro').on("click", function(e){
         e.preventDefault()
         $.get("quadros.html", function(data){
-            $('#conteudo').html(data)
+            $('#content').html(data)
         })
     })
     $('#desenho').on("click", function(e){
         e.preventDefault()
         $.get("desenhos.html", function(data){
-            $('#conteudo').html(data)
+            $('#content').html(data)
         })
 
     })
     
     $(document).ready(function(){
         $.get("grafites.html", function(data){
-            $('#conteudo').html(data)
+            $('#content').html(data)
         })    
     })
 
