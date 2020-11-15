@@ -10,7 +10,7 @@
 }
 
 .nav-link{
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-family: 'Roboto';
     color: #000000;
 }
@@ -44,7 +44,7 @@
 }
 
 .about-text{
-    font-size: 1em;
+    font-size: 1.1em;
     color: #ffffff;
     font-family: sans-serif;
     text-align: justify;
@@ -90,7 +90,7 @@
 .images-tattoo img{
     padding: 3px;
     margin-left: 50px;
-    width: 300px;
+    width: 250px;
     height: 300px;
 }
 
@@ -102,7 +102,6 @@ div .card-header{
 div .card-header img{
     border: 1px solid white;
 }
-
 
 
 /*style main - tatuadores*/
@@ -355,6 +354,7 @@ span.icons, span.cop{
         height: 270px;
         width: 43%;
     }
+    
  }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {  
@@ -384,5 +384,6 @@ span.icons, span.cop{
     .images-drawing img, .images-graffiti img, .images-frame img{
         margin-left: 2.5%;
     } 
+   
 
 }
